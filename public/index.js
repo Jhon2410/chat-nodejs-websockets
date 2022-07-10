@@ -3,7 +3,7 @@ const fecha  = new Date()
 const mensajes = document.getElementById("notificaciones")
 
 addEventListener("load",()=>{
-    ws = new WebSocket("ws://localhost:5000" , "a");
+    ws = new WebSocket("wss://chat-ws-j.herokuapp.com/" , "a");
 
     ws.onopen = function (event) {
         console.log(event)
