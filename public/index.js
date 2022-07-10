@@ -2,7 +2,7 @@ let ws = null;
 const fecha  = new Date()
 
 addEventListener("load",()=>{
-    ws = new WebSocket("ws://chat-ws-j.herokuapp.com/" , "a");
+    ws = new WebSocket("wss://chat-ws-j.herokuapp.com/" , "a");
 
     ws.onopen = function (event) {
       };
