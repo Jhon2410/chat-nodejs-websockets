@@ -20,15 +20,20 @@ const miSocket = new WebSocketServer({
 }) 
 
 const keys  =  [ ]
+const mensajes = []
 miSocket.on("request", (request)=>{
 
     let conn = request.accept("a" , request.origin);
     keys.push(conn)
+    conn.send(JSON.stringify({"texto" : mensajes , "pc" : true}))
+        
     conn.on("message", (message)=>{
+        mensajes.push(message.utf8Data)
+        console.log(mensajes)
+
         keys.map(c=>{
             if(c!==conn){
-            c.sendUTF(message.utf8Data);
-
+            c.send(JSON.stringify({"texto" : mensajes}))
             }
            })
 

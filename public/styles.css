@@ -87,9 +87,16 @@ button:hover{
     bottom: -20px;
     z-index: 15;
 }
-
+.msgB{
+    background:rgb(6, 212, 24);
+    text-align:Start;
+    color: rgb(255, 255, 255);
+    padding:15px;
+    position: relative;
+}
 
 .img-user{
     border-radius: 5px;
     margin: 0px 10px;
+    width :25px;
 }
