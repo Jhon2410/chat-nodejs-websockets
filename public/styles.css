@@ -1,0 +1,95 @@
+*{
+    background: black;
+    text-align: center;
+    color: white;
+    font-family:monospace;
+
+}
+button{
+    background:rgb(4, 4, 180);
+    padding:5px;
+    border-radius:5px ;
+    font-size: 16px;
+    margin:2px 0px 15px 0px;
+    height:100%;
+    width:100%;
+    color:white;
+}
+
+button:hover{
+    background:rgb(14, 14, 255);
+
+}
+
+.controls{
+    display:grid;
+}
+.container{
+    width:500px;
+    margin: 25px auto;
+    position:relative;
+    background:rgb(255, 255, 255);
+
+}
+
+#notificaciones{
+    background:white;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    height:500px;
+    overflow:scroll;
+}
+#msg{
+    background: white;
+    color: rgb(14, 14, 14);
+}
+
+.me{
+    background:rgb(8, 119, 170);
+    text-align:end;
+    color: rgb(255, 255, 255);
+    padding:15px;
+    position: relative;
+    
+}
+
+.otros{
+    background:rgb(6, 212, 24);
+    text-align:Start;
+    color: rgb(255, 255, 255);
+    padding:15px;
+    position: relative;
+
+}
+
+.hora{
+    background:transparent;
+    position: absolute;
+    font-size: 14px;
+
+}
+
+.horaO{
+    margin-right: 0px;
+    right: 3px;
+}
+
+.horaM{
+    margin-left: 0px;
+    left: 3px;
+}
+
+#controles{
+    display: grid;
+    width:100%;
+    grid-template-columns: 80% 20%;
+    position: absolute;
+    bottom: -20px;
+    z-index: 15;
+}
+
+
+.img-user{
+    border-radius: 5px;
+    margin: 0px 10px;
+}
